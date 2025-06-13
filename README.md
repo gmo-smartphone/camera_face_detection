@@ -83,7 +83,7 @@ void main() async{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SmartFaceCamera(
+        body: CameraFaceDetection(
           controller: controller,
           message: 'Center your face in the square',
         )
@@ -98,7 +98,7 @@ Here is a list of properties available to customize your widget:
 
 | Name                      | Type                  | Description                                                                   |
 |---------------------------|-----------------------|-------------------------------------------------------------------------------|
-| controller                | FaceCameraController  | The controller for the [SmartFaceCamera] widget                               |
+| controller                | FaceCameraController  | The controller for the [CameraFaceDetection] widget                               |
 | showControls              | bool                  | set false to hide all controls                                                |
 | showCaptureControl        | bool                  | set false to hide capture control icon                                        |
 | showFlashControl          | bool                  | set false to hide flash control control icon                                  |

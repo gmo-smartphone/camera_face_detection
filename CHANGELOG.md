@@ -23,7 +23,7 @@
 
 ## 0.1.1
 
-- Added `FaceCameraController` allowing developers to control the `SmartFaceCamera` widget.
+- Added `FaceCameraController` allowing developers to control the `CameraFaceDetection` widget.
 - Updated dependencies.
 - Enhanced performance.
 - Modified `README.md`.

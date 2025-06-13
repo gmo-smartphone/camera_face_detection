@@ -10,7 +10,7 @@ import '../handlers/face_identifier.dart';
 import '../utils/logger.dart';
 import 'face_camera_state.dart';
 
-/// The controller for the [SmartFaceCamera] widget.
+/// The controller for the [CameraFaceDetection] widget.
 class FaceCameraController extends ValueNotifier<FaceCameraState> {
   /// Construct a new [FaceCameraController] instance.
   FaceCameraController({

@@ -1,7 +1,6 @@
 name: face_camera
 description: A Flutter camera plugin that detects faces in real-time. In addition it can capture automatically once a face is detected, This can be handy while taking a selfie during kyc.
 version: 0.1.4
-homepage: https://github.com/Conezi/face_camera
 
 environment:
   sdk: '>=2.18.4 <4.0.0'
@@ -10,13 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # Camera
   camera: ^0.11.0+2
-  google_mlkit_face_detection: ^0.12.0
+
+  # ML Kit
+  google_mlkit_face_detection: ^0.13.1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.0
 
 flutter:
 

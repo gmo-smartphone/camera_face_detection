@@ -27,8 +27,9 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     controller = FaceCameraController(
-      autoCapture: true,
+      autoCapture: false,
       defaultCameraLens: CameraLens.front,
+      imageResolution: ImageResolution.medium,
       onCapture: (File? image) {
         setState(() => _capturedImage = image);
       },
@@ -58,21 +59,24 @@ class _MyAppState extends State<MyApp> {
                       fit: BoxFit.fitWidth,
                     ),
                     ElevatedButton(
-                        onPressed: () async {
-                          await controller.startImageStream();
-                          setState(() => _capturedImage = null);
-                        },
-                        child: const Text(
-                          'Capture Again',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.w700),
-                        ))
+                      onPressed: () async {
+                        await controller.startImageStream();
+                        setState(() => _capturedImage = null);
+                      },
+                      child: const Text(
+                        'Capture Again',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    )
                   ],
                 ),
               );
             }
-            return SmartFaceCamera(
+            return CameraFaceDetection(
                 controller: controller,
                 messageBuilder: (context, face) {
                   if (face == null) {
