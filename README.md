@@ -20,7 +20,7 @@ face_camera: ^<latest-version>
 ### iOS
 ---  
 
-* Minimum iOS Deployment Target: 15.5.0
+* Minimum iOS Deployment Target: 12.0
 * Follow this <a href="https://github.com/bharat-biradar/Google-Ml-Kit-plugin#requirements">link</a> and setup  `ML Kit` this is required for `face_camera` to function properly on `iOS`
 
 Add two rows to the `ios/Runner/Info.plist:`
