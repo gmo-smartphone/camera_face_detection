@@ -13,6 +13,8 @@ dependencies:
   # Camera
   camera: ^0.11.0+2
 
+  camera_android_camerax: 0.6.22
+
   # ML Kit
   google_mlkit_commons: 0.11.0
   google_mlkit_face_detection: 0.13.1
